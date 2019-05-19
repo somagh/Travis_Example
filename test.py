@@ -18,6 +18,10 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(divide(4, -4), -1)
         self.assertRaises(Exception, mult(8, 0))
 
+    def test_minus(self):
+        self.assertEqual(wrong_minus(6, 3), 3)
+        self.assertEqual(wrong_minus(2, -1), 3)
+
 
 if __name__ == '__main__':
     unittest.main()
